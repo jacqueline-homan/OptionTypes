@@ -1,0 +1,1 @@
+/home/jacque/Projects/F-sharp/OptionTypes/OptionTypes/obj/x86/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.fs
