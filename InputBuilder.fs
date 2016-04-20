@@ -22,7 +22,7 @@ module InputBuilder =
             printfn "If you need disability accommodations, proceed through the following menu."
             printfn "Please enter accessibility needs and press 'Enter':"
             printfn "Enter 'done' when done"
-            printfn "Otherwise, enter 'skip' to skip this section."
+            printfn "Otherwise, enter 'done' to skip this section."
             printfn "Enter 'Blind', 'Deaf', 'Heart Condition',or 'Mobility-Impaired':"
 
             let customer = Console.ReadLine()
@@ -31,10 +31,10 @@ module InputBuilder =
             | _ ->
                 let n = 
                     match customer.Trim().ToLower() with
-                    | "blind" -> Blind
-                    | "deaf" -> Deaf
-                    | "mobility-impaired" -> Mobility
-                    | "heart condition" -> HeartCondition
+                    | "blind" -> Some Blind
+                    | "deaf" -> Some Deaf
+                    | "mobility-impaired" -> Some Mobility
+                    | "heart condition" -> Some HeartCondition
                     | _ -> printfn "Invalid Entry"
                            None
                 match n with

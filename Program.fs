@@ -32,6 +32,7 @@ let itinerary() =
 let main argv = 
     let f = OptionTypes.InputBuilder.flight()
     let b = OptionTypes.InputBuilder.booking()
+    let d = OptionTypes.InputBuilder.disability()
     let m = OptionTypes.InputBuilder.food()
 
   
